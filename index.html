@@ -118,18 +118,46 @@
             <img src="images/contact_us.jpg" alt="Contact Us" style="max-width: 400px;">
         </div>
         <script type="text/javascript" charset="utf-8">
-              (function (g, e, n, es, ys) {
-                g['_genesysJs'] = e;
-                g[e] = g[e] || function () {
-                  (g[e].q = g[e].q || []).push(arguments)
-                };
-                g[e].t = 1 * new Date();
-                g[e].c = es;
-                ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
-              })(window, 'Genesys', 'https://apps.mypurecloud.de/genesys-bootstrap/genesys.min.js', {
-                environment: 'prod-euc1',
-                deploymentId: '3d1367da-bd76-4c73-9ded-c241387faf5b'
-              });
+                (function(g, e, n, es, ys) {
+   g['_genesysJs'] = e;
+   g[e] = g[e] || function() {
+       (g[e].q = g[e].q || []).push(arguments)
+   }
+   ;
+   g[e].t = 1 * new Date();
+   g[e].c = es;
+   ys = document.createElement('script');
+   ys.async = 1;
+   ys.src = n;
+   ys.charset = 'utf-8';
+   document.head.appendChild(ys);
+}
+)(window, 'Genesys', 'https://apps.mypurecloud.de/genesys-bootstrap/genesys.min.js', {
+   environment: 'euc1',
+   deploymentId: '3d1367da-bd76-4c73-9ded-c241387faf5b'
+});
+ 
+Genesys("subscribe", "Messenger.ready", function() {
+   Genesys("command", "Messenger.open");
+   Genesys("command", "Database.set", {
+       messaging: {
+           customAttributes: {
+               WebsiteName: 'Test QA',
+               WebsiteEmailAddress: 'test@qa.com',
+               WebsiteQuestion: 'How can I help?',
+               WebsiteCountryCode: countryCode,
+               WebsiteLanguageCode: langCode
+           }
+       }
+   });
+});
+
+
+
+
+
+
+
         </script>       
     </div>
     <footer>
