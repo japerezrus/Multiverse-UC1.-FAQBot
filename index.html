@@ -18,6 +18,13 @@
             text-align: center;
             font-size: 24px;
             font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header img {
+            height: 50px;
+            margin-right: 15px;
         }
         .container {
             width: 80%;
@@ -25,16 +32,22 @@
             padding: 20px;
             background-color: white;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         .section {
             margin-bottom: 20px;
+        }
+        .services img {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 10px;
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
@@ -42,14 +55,16 @@
 </head>
 <body>
     <header>
+        <img src="https://via.placeholder.com/100" alt="Orange Protection Logo">
         Orange Protection Insurance by Genesys
     </header>
     <div class="container">
         <div class="section">
             <h2>Welcome to Orange Protection Insurance</h2>
             <p>Providing reliable and comprehensive insurance solutions for your peace of mind.</p>
+            <img src="https://via.placeholder.com/800x400" alt="Insurance Banner">
         </div>
-        <div class="section">
+        <div class="section services">
             <h2>Our Services</h2>
             <ul>
                 <li>Health Insurance</li>
@@ -58,11 +73,13 @@
                 <li>Home Insurance</li>
                 <li>Business Insurance</li>
             </ul>
+            <img src="https://via.placeholder.com/500x300" alt="Insurance Services">
         </div>
         <div class="section">
             <h2>Contact Us</h2>
-            <p>Email: support@orangeprotection.com</p>
+            <p>Email: <a href="mailto:support@orangeprotection.com">support@orangeprotection.com</a></p>
             <p>Phone: +1 (800) 555-0199</p>
+            <img src="https://via.placeholder.com/300x200" alt="Contact Us">
         </div>
     </div>
     <footer>
