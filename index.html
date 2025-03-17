@@ -120,7 +120,8 @@
 
         
         <script type="text/javascript" charset="utf-8">
-                (function(g, e, n, es, ys) {
+
+            (function(g, e, n, es, ys) {
    g['_genesysJs'] = e;
    g[e] = g[e] || function() {
        (g[e].q = g[e].q || []).push(arguments)
@@ -144,9 +145,8 @@ Genesys("subscribe", "Messenger.ready", function() {
    Genesys("command", "Database.set", {
        messaging: {
            customAttributes: {
-               
-               WebsiteCountryCode: 'UK',
-               WebsiteLanguageCode: 'EN',
+                WebsiteCountryCode: 'UK',
+                WebsiteLanguageCode: 'EN',
 
                
                 Brand: 'OPI',
@@ -160,18 +160,14 @@ Genesys("subscribe", "Messenger.ready", function() {
                 Language: 'English',
                 EXTAG: 'RAY',
                 DEBUG: 'YES'
-            }
+            
+
+
+
            }
-       
+       }
    });
 });
-
-
-
-
-
-
-
         </script>       
     </div>
     <footer>
