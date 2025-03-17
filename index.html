@@ -144,11 +144,23 @@ Genesys("subscribe", "Messenger.ready", function() {
    Genesys("command", "Database.set", {
        messaging: {
            customAttributes: {
-               WebsiteName: 'Test QA',
-               WebsiteEmailAddress: 'test@qa.com',
-               WebsiteQuestion: 'How can I help?',
-               WebsiteCountryCode: countryCode,
-               WebsiteLanguageCode: langCode
+               
+               WebsiteCountryCode: 'UK',
+               WebsiteLanguageCode: 'EN',
+
+               
+                Brand: 'OPI',
+                Env: 'DEV',
+                WebsiteURL: 'https://japerezrus.github.io/Multiverse-UC1.-FAQBot/',
+                
+                
+                department: 'default',
+                Auth: 'Login',
+                MockUp: 'OFF',
+                Language: 'English',
+                EXTAG: 'RAY',
+                DEBUG: 'YES'
+}
            }
        }
    });
