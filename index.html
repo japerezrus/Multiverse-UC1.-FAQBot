@@ -40,12 +40,13 @@
         .section {
             margin-bottom: 30px;
             text-align: left;
-        }
-        .services {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: space-between;
-            flex-wrap: wrap;
+        }
+        .section img {
+            max-width: 50%;
+            border-radius: 12px;
         }
         .services ul {
             list-style: none;
@@ -61,12 +62,6 @@
             content: "✔ ";
             color: #ff6600;
             font-weight: bold;
-        }
-        .services img, .contact img {
-            width: 100%;
-            max-width: 200px;
-            margin-left: 20px;
-            border-radius: 12px;
         }
         .btn {
             display: inline-block;
@@ -97,9 +92,11 @@
     </header>
     <div class="container">
         <div class="section">
-            <h2>Welcome to Orange Protection Insurance</h2>
-            <p>We provide industry-leading insurance solutions to help you safeguard your future. Whether it's for your health, life, vehicle, home, or business, our team ensures you have the right coverage tailored to your needs.</p>
-            <img src="images/insurance_banner.jpg" alt="Insurance Banner" style="max-width: 400px;">
+            <div>
+                <h2>Welcome to Orange Protection Insurance</h2>
+                <p>We provide industry-leading insurance solutions to help you safeguard your future. Whether it's for your health, life, vehicle, home, or business, our team ensures you have the right coverage tailored to your needs.</p>
+            </div>
+            <img src="images/insurance_banner.jpg" alt="Insurance Banner">
         </div>
         <div class="section services">
             <ul>
@@ -109,16 +106,16 @@
                 <li><strong>Home Insurance:</strong> Protect your home and valuables against unforeseen events like natural disasters and theft.</li>
                 <li><strong>Business Insurance:</strong> Ensure your company remains financially stable and protected against potential risks.</li>
             </ul>
-            <img src="images/insurance_services.jpg" alt="Insurance Services">
         </div>
         <div class="section contact">
-            <h2>Contact Us</h2>
-            <p>Our customer support team is available 24/7 to assist you with your queries.</p>
-            <p>Email: <a href="mailto:support@orangeprotection.com">support@orangeprotection.com</a></p>
-            <p>Phone: +1 (800) 555-0199</p>
+            <div>
+                <h2>Contact Us</h2>
+                <p>Our customer support team is available 24/7 to assist you with your queries.</p>
+                <p>Email: <a href="mailto:support@orangeprotection.com">support@orangeprotection.com</a></p>
+                <p>Phone: +1 (800) 555-0199</p>
+                <a href="contact.html" class="btn">Get in Touch</a>
+            </div>
             <img src="images/contact_us.jpg" alt="Contact Us">
-            <br>
-            <a href="contact.html" class="btn">Get in Touch</a>
         </div>
         <script type="text/javascript" charset="utf-8">
               (function (g, e, n, es, ys) {
